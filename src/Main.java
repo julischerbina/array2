@@ -21,8 +21,8 @@ public class Main {
         System.out.println("Задача 1");
         int[] arr = generateRandomArray();
         int sum = 0;
-        for (int j : arr) {
-            sum += j;
+        for (int current : arr) {
+            sum += current;
         }
         System.out.println("Сумма трат за месяц составила " + sum + " рублей");
     }
@@ -48,7 +48,7 @@ public class Main {
         for (int current : arr) {
             sum += current;
         }
-        double averagePay = sum / arr.length;
+        double averagePay = (double) sum / arr.length;
         System.out.println("Средняя сумма трат за месяц составила " +averagePay+ " рублей.");
    }
     public static void task4() {
